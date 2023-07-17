@@ -1,0 +1,11 @@
+.html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-image {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}

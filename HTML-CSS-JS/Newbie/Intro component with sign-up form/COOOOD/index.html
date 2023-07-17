@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro component</title>
+</head>
+<body>
+    <div id="page-content">
+        <div id="left-side">
+            <h1 id="header">Learn to code by <br> watching others</h1>
+            <p id="text-content">See how experienced developers solve problems 
+                in real-time. <br> Watching scripted tutorials is great, but understanding how <br> developers think is invaluable.</p>
+        </div>
+        <div id="right-side">
+            <div id="free-trial">
+                <p id="trial-text"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+            </div>
+            <form  id="forma">
+                <input type="text" name="firstname" placeholder="First Name" class="inputs" id="first-name" >
+                <img src="images/icon-error.svg" class="error-msg error-img" alt="error">
+                <p class="error-msg error-txt">First Name cannot be empty</p>
+                <input type="text" name="lastname" placeholder="Last Name" class="inputs" id="last-name">
+                <img src="images/icon-error.svg" class="error-msg error-img" alt="error" class="inputs">
+                <p class="error-msg error-txt">Last Name cannot be empty</p>
+                <input type="text" name="email" placeholder="Email Adress" class="inputs" id="email-adress" >
+                <img src="images/icon-error.svg" class="error-msg error-img" alt="error">
+                <p class="error-msg error-txt">Looks like this is not an email</p>
+                <input type="password" name="password" placeholder="Password" class="inputs" id="password">
+                <img src="images/icon-error.svg" class="error-msg error-img" alt="error">
+                <p class="error-msg error-txt">Password cannot be empty</p>
+                <button type="submit" id="submit-btn">Claim your free trial</button>
+                <p id="last-part">By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p>
+            </form>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+.ecran{
+    width:100%;
+    height:100%;
+    background-color: black;
+}
+.site-indieni{
+    width:80%;
+    height:95%;
+    margin:10px auto;
+    position:relative;
+    top:2%;
+}
+.header{
+    background-color: blue;
+    color:yellow;
+    height:30%;
+    width:100%;
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .nav{
+        background-color: yellow;
+        height:7%;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista{
+        list-style-type: none; 
+    }
+    .butoane{
+        background-color: red;
+        display:inline-block;
+        padding: 10px;
+        color:aliceblue;
+        font-size:larger;
+        }
+        .texte{
+            width:100%;
+            height:40%;
+            display:flex;
+            color:aliceblue;
+            font: size 1.5em;
+            text-align:justified;
+        }
+        .left{
+            height:100%;
+            width: 31%;
+            background-color: purple;
+            
+        }
+        .right{
+            height:100%;
+            width: 69%;
+            background-color: green;
+        }
+        .text{
+            padding-left:10px;
+            padding-right:10px;
+        }
+        .footer{
+            background-color: rgb(26, 26, 26);
+            width:100%;
+            height:9.5%;
+            color:aliceblue;
+            text-align: center;
+            /*centratul vertical*/
+        }
+        .jos{
+            width:100%;
+            height:14.5%;
+           background-image: url(https://lh3.googleusercontent.com/wOvyiSjQqAB2wixLXNedKDlSStx_tZqTCJj7N3ZbBW_VovMemxDsqUrNHFRvLaOszXvh1kLD-9w5Ep0l3jmstFZTb_PJ7KQN8Be_1QJhiJMKk27onOwzZOKxVy43Ogpk-AFHK0q3pQ=w2400);
+           background-position: center;
+        }

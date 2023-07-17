@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#page-title {
+    font-size: 2rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#soon {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+#subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#email-input {
+    width: 20rem;
+    height: 2rem;
+    margin-right: .8rem;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 20px;
+    padding-left: 1rem;
+  
+}
+
+#email-input::placeholder {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+#submit-btn {
+    height: 2rem;
+    width: 8rem;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: hsl(354, 100%, 66%);
+    position: relative;
+    right: 7rem;
+    margin-bottom: 3rem;
+}
+
+.error-msg {
+    font-size: 12px;
+}
+
+
+
+#contact-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.fa-brands {
+    margin-right: .5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%); 
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    background-color:hsl(223, 87%, 63%); 
+    color: white;
+}
+
+#copyright {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #card-container {
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding-left: 2rem;
+        text-align: center;
+    }
+
+    #main-img {
+        width: 80%;
+    }
+
+    #email-input, #submit-btn {
+        width: 80%;
+    }
+
+    #email-input {
+        padding-left: 1rem;
+        margin: 0;
+    }
+   
+    #submit-btn {
+        margin-top: 1rem;
+    }
+
+    #contact-div {
+        margin-top: 3rem;
+    }
+    #error-empty, #error-format {
+        position: absolute;
+        bottom: 2.2rem;        
+        margin: 0;
+        width: 280px;
+    }
+
+
+}

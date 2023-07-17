@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Outfit:wght@300;400;600&display=swap');
+body{
+    background-color: hsl(217, 54%, 11%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.card-container{
+    background-color:hsl(216, 50%, 16%) ;
+    width:20%;
+    padding:15px;
+    text-align: left;
+    border-radius: 3%;
+}
+
+.image-equilibrium{
+    border-radius: 3%;
+    max-width: 100%;
+}
+.equilibrum{
+    width:100%;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight:600;
+}
+
+.value{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid hsl(214, 9%, 31%) ;
+    font-size: 0.8em;
+    display:flex;
+    align-items: center;
+}
+
+.value-text{
+    color:hsl(178, 100%, 50%);
+    padding-left: 0.5em;
+    padding-right: 8em;
+}
+
+.footer{
+    padding-top: 1.2em;
+    display:flex;
+    align-items: center;
+}
+
+.clock-text{
+    padding-left: 0.5em;
+}
+
+.footer-avatar{
+    width:10%;
+    height:auto;
+    border:solid 1px white;
+    border-radius: 50%;
+    }
+
+.footer-text{
+    padding-left: 0.8em;
+    padding-right: 0.3em;
+    color: hsl(215, 51%, 70%);
+    
+    }
+
+.span-text{
+    color:hsl(0, 0%, 100%);
+    
+}
+
+.text{
+    color: hsl(215, 51%, 70%);
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 375px) {
+   .card-container {
+    width:90%;
+       } 
+    .value-text{
+        padding-right: 3em;
+       }
+
+   .footer{
+    font-size: 0.8em;
+   }
+}
+
+@media  (min-width:375px) and (max-width:1023px) {
+    .card-container{
+        width:80%;
+    }
+}

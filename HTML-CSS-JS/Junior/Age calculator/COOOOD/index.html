@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card-container">
+        <div id="card-calculator">
+            <form id="card-top">
+                <div id="dates">
+                  <p class="day-dates red">DAY</p>
+                  <p class="day-dates red">MONTH</p>
+                  <p class="day-dates red">AGE</p>
+                </div>
+                <div id="inputs">
+                    <input type="number" min="1" id="day-input" class="user-input red" placeholder="DD">
+                    <input type="number" min="1" id="month-input" class="user-input red" placeholder="MM">
+                    <input type="number" min="1" id="age-input" class="user-input red" placeholder="YYYY">
+                </div>
+                <div id="empty-errors">
+                    <p class="empty-error errors-text">This field is required</p>
+                    <p class="empty-error errors-text">This field is required</p>
+                    <p class="empty-error errors-text">This field is required</p>
+                </div>
+                <div id="valid-errors">
+                    <p id="day-error" class="validation-error errors-text">Must be a valid day</p>
+                    <p id="month-error" class="validation-error errors-text">Must be a valid month</p>
+                    <p id="year-error" class="validation-error errors-text">The year must be in the past</p>
+                </div>
+                <button type="submit" id="submit-btn"></button>
+            </form>
+            <p id="result-year" class="resulted"><span id="span-year" class="resulted-span">--</span>years</p>
+            <p id="result-month" class="resulted"><span id="span-month" class="resulted-span">--</span>months</p>
+            <p id="result-day" class="resulted"><span id="span-day" class="resulted-span">--</span>days</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

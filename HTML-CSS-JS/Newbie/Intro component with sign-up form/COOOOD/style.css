@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#page-content{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+#left-side {
+    padding-right: 3rem;
+}
+
+#header {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+#text-content {
+    font-size: .8rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+#free-trial {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#forma {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+}
+
+.inputs{
+    width: 90%;
+    height: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.inputs::placeholder{
+    font-weight: 400;
+}
+
+.error-img {
+    position: relative;
+    bottom: 2.3rem;
+    left: 8rem;
+}
+
+.error-txt{
+    position: relative;
+    bottom: 1.5rem;
+    left: 6.5rem;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%) ;
+}
+
+#submit-btn {
+    width: 90%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: hsl(154, 59%, 51%);
+    text-align: center;
+}
+
+#submit-btn:active{
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+#free-trial {
+    border-radius: 10px;
+    height: 3rem;
+    padding: 1rem 2rem;
+}
+
+#last-part {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+#terms {
+    font-size: 12px;
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+
+#terms:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #page-content {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+
+    #free-trial {
+        overflow: hidden;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .error-img {
+        left: 4rem;
+    }
+
+    .error-txt {
+        left: 4rem;
+    }
+  }

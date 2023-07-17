@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card-container">
+        <div id="card">
+            <div id="left-card">
+                <p id="bill" class="input-title">Bill</p>
+                <input type="number" id="bill-input" placeholder="$ 0">
+                <img src="images/icon-dollar.svg" alt="Dolar" id="dolar-sign" class="sign">
+                <p id="tip-select" class="input-title">Select Tip %</p>
+                <div id="btn-section">
+                    <button class="tip-btn" id="5-btn">5%</button>
+                    <button class="tip-btn" id="10-btn">10%</button>
+                    <button class="tip-btn" id="15-btn">15%</button>
+                    <button class="tip-btn" id="20-btn">20%</button>
+                    <button class="tip-btn" id="25-btn">25%</button>
+                    <input type="number" class="tip-btn" id="custom-btn" placeholder="CUSTOM">
+                </div>
+                <p id="nr-people" class="input-title">Number of People</p>
+                <input type="text" id="people-input" class="people-input" placeholder="0">
+                <img src="images/icon-person.svg" alt="Dolar" id="person-sign" class="sign">
+            </div>
+            <div id="right-card">
+                <p>Tip amount <span id="tip-amount">$0.00</span> <br> <span class="person">/ person</span></p>
+                <p>Total <span id="tip-total">$0.00</span> <br> <span class="person">/ person</span></p>
+                <button id="reset-btn">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+  }
+
+#card-container {
+    height: 90%;
+    width: 90%;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#left-side {
+    padding: 4rem 7rem;
+    width: 60%;
+}
+
+
+
+.headers {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.headers h1 {
+    font-size: 3rem;
+    letter-spacing: .8rem;
+}
+
+.headers #were {
+    font-weight: 300;
+}
+
+.second-header {
+    font-weight: 600;
+}
+
+.desaturated-red {
+    color: hsl(0, 36%, 70%);
+}
+
+#card-text {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.right-side {
+    width: 40%;
+    background-image: url(images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+
+#email-input {
+    width: 60%;
+    height: 3rem;
+    border-color: hsl(0, 36%, 70%);
+    border-radius: 30px;
+    padding-left: 2rem;
+    color: hsl(0, 36%, 70%);
+    
+}
+
+#email-input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+
+#error-img {
+    position: relative;
+    right: 5rem;
+    top: .5rem;
+}
+/*linear-gradient(135deg, hsla(0, 80%, 86%, 1) 0%, hsla(0, 74%, 74%, 1) 100%);*/
+
+#submit-img {
+    padding:.9rem 2.2rem;
+    background: linear-gradient(135deg, hsla(0, 80%, 86%, 1) 0%, hsla(0, 74%, 74%, 1) 100%);
+    position: relative;
+    top: 1.3rem;
+    right: 4.7rem;
+    border-radius: 30px;
+}
+
+#submit-img:hover {
+    background: linear-gradient(135deg, hsla(0, 74%, 74%, 1) 0%, hsla(0, 80%, 86%, 1) 100%);
+}
+
+#error-msg {
+    color: hsl(0, 93%, 68%) ;
+    font-size: 14px;
+    margin: .6rem 1rem;
+}

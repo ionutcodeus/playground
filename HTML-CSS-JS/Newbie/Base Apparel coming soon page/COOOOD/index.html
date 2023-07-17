@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base Apparel</title>
+</head>
+<body>
+    <div id="card-container">
+        <div id="left-side">
+            <div id="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="headers">
+                <h1 id="were" class="desaturated-red">WE'RE</h1>
+                <h1 class="second-header">COMING</h1>
+                <h1 class="second-header">SOON</h1>
+            </div>
+            <div >
+                <p class="desaturated-red" id="card-text">Hello fellow shoppers! We're currently building our new <br> fashion store. 
+                    Add your email below to stay up-to-date with <br> announcements and our launch deals.</p>
+            </div>
+            <form action="procesare.php" method="post" id="form">
+                <!-- Alte câmpuri de intrare -->
+                <input type="email" id="email-input" name="email" placeholder="Email Adress" required>
+                <img id="error-img" src="images/icon-error.svg" alt="Imagine">
+                <input type="image" src="images/icon-arrow.svg" alt="Submit" id="submit-img">
+              </form>
+              <p id="error-msg">Please provide a valide mail</p>
+        </div>
+        <div class="right-side"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    
+    height:50%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.left-side{
+    height: 100%;
+    width: 50%;
+    background-color: hsl(244, 38%, 16%);
+    /*padding: 2rem 4rem 2rem 2rem ;*/
+    margin:0;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
+
+.purple{
+    width: 100%;
+    height: 100%;
+    background-color:hsl(277, 64%, 61%) ;
+    opacity: 0.7;
+}
+.right-side{
+    height: 100%;
+    width: 50%;
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    filter: hsl(277, 64%, 61%);  
+}
+
+.card-title{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+#span{
+    color: hsl(277, 64%, 61%);
+}
+
+.card-text{
+    font-size: 1.1rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.footer{
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.up{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin-top: 2rem;
+}
+
+.down{
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+@media  screen and (max-width:900px) {
+    .card-container{
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+    }
+    
+    .right-side{
+        background-image: url("images/image-header-mobile.jpg");
+        height: 30%;
+        width: 100%;
+    }
+
+    .left-side{
+        box-sizing: content-box;
+        height: 100%;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;*/
+        text-align: center;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .up{
+        margin-top: 0.8rem;
+    }
+}

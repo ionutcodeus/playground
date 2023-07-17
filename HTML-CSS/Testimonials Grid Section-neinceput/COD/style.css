@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+    background-color:  hsl(0, 0%, 81%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container{
+    width: 80%;
+    height: 70%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.grid{
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+.grid-1{
+    grid-row: 1/2 ;
+    grid-column: 1/3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 350px 0px;
+    color: hsl(0, 0%, 81%) ;
+}
+
+.grid-2{
+    grid-row: 1/2 ;
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.grid-3{
+    grid-row: 2/3 ;
+    grid-column: 1/2;
+    background-color: white;
+}
+
+.grid-4{
+    grid-row: 2/3 ;
+    grid-column: 2/4;
+    background-color: black;
+}
+
+.grid-5{
+    grid-row: 1/3 ;
+    grid-column: 4/5;
+    background-color: white;
+}
+
+.grid-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-name{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.verified{
+    margin-top: 0;
+   
+    opacity: .5;
+    font-size:15px;
+}
+
+.grid-1 p{
+    opacity: .7;
+}
+
+.profile-description h6{
+    margin:0;
+}
+
+.grid-1, .grid-2,  .grid-4{
+    color: hsl(0, 0%, 81%) ;
+}
+
+.grid-1 img{
+    border: 3px solid magenta;
+}
+
+.grid-4 img{
+    border: 3px solid hsl(263, 55%, 52%) ;
+}
+
+p{
+    opacity: .7;
+    line-height: 1.2rem;
+    font-size: 16px;
+}
+
+@media screen and (max-width:375px) {
+    .page-container{
+        width: 90%;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+    }
+
+    .grid-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .grid-2{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .grid-3{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .grid-4{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .grid-5{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+}

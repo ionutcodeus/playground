@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#page-content{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #af67e9, #9f67e9, #8d66e9, #7a66e8, #6565e7);
+    
+}
+
+#card-container{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+
+}
+
+#image{
+    position: relative;
+    right: 8rem;
+    z-index: -5;
+}
+
+#accordionExample{
+    border: 0;
+}
+
+.accordion-button:hover{
+    color: orange;
+}
+
+.button-question{
+    margin: 0;
+}
+
+#faq{
+    margin-bottom: 2rem;
+}
+
+@media  screen and (max-width:500px) {
+    #card-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .right-card{
+        padding: 0;
+    }
+}

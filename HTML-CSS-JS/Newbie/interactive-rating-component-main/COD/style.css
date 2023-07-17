@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    background-color:hsl(216, 12%, 8%) ;
+}
+
+#card-container{
+    background-color:hsl(213, 19%, 18%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    padding: 2rem 1rem 2rem 3rem;
+}
+
+#how, #thank{
+    color: hsl(0, 0%, 100%);
+}
+
+.text{
+    font-family: 'Overpass', sans-serif;
+    text-align: justify;
+}
+
+#card-text, #thank-text{
+    color: hsl(217, 12%, 63%);
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons :hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating{
+    width:15%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsl(217, 12%, 63%);
+    opacity: .6;
+    border: 0px;
+}
+
+.rating.orange {
+    background-color:hsl(25, 97%, 53%) ;
+}
+
+#submit-button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#thank-card{
+    
+    text-align: center;
+}
+
+#selected{
+    margin: 1rem 5rem;
+    background-color: hsl(223, 20%, 14%);
+    border-radius: 15px;
+}
+
+#p-selected{
+    color:hsl(25, 97%, 53%) ;
+}
+
+@media only screen and (max-width : 600px) {
+    #card-container {
+        position: fixed;
+        width: 80%;
+        height: auto;
+        
+    }
+
+    #main-card {
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    .break{
+        display: none;
+    }
+    
+    #buttons {
+        margin-top: 2rem;
+    }
+
+    #submit-button {
+        margin-top: 4rem;
+    }
+}
