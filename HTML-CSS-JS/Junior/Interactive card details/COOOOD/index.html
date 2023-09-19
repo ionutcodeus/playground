@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-content">
+        <div id="left-part">
+            <img src="images/bg-card-front.png" alt="front-part" id="front-card">
+            <img src="images/bg-card-back.png" alt="back-part" id="back-card">
+        </div>
+        <div id="right-part">
+            <div class="inputs">
+                <p class="input-title">CARDHOLDER NAME</p>
+                <input type="text" class="card-dates" placeholder="e.g. Jane Holder">
+            </div>
+            <div class="inputs">
+                <p class="input-title" >CARD HOLDER</p>
+                <input type="text" class="card-dates" placeholder="e.g. 1234 5678 9123 0000">
+                <p class="error-msg" id="number-error">Wrong format, numbers only</p>
+            </div>
+            <div id="card-detail-title">
+                <p class="input-title detail-title">EXP. DATE(MM/YY)</p>
+                <P class="input-title detail-title">CVC</P>
+            </div>
+            <div class="input-detail">
+                <input type="text" class="short-input" placeholder="MM">
+                <input type="text" class="short-input" placeholder="YY">
+                <input type="text" class="short-input" placeholder="e.g. 123">
+            </div>
+            <div class="error">
+                <p class="error-msg">Can't be blank</p>
+                <p class="error-msg">Can't be blank</p>
+            </div>
+            <button type="button" class="cc-btn" id="confirm-btn">Confirm</button>
+            <div id="thank-card">
+                <img src="images/icon-complete.svg" alt="completed">
+                <p id="thanks">Thank you!</p>
+                <p id="thank-text">We've added your card details</p>
+                <button type="button" class="cc-btn" id="continue-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

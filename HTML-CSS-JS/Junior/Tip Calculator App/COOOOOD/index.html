@@ -10,26 +10,32 @@
     <div id="card-container">
         <div id="card">
             <div id="left-card">
-                <p id="bill" class="input-title">Bill</p>
-                <input type="number" id="bill-input" placeholder="$ 0">
+                <p id="bill" class="input-title ">Bill</p>
+                <input type="number" id="bill-input" placeholder="0" class="payment-info payment-inputs" min="0">
                 <img src="images/icon-dollar.svg" alt="Dolar" id="dolar-sign" class="sign">
                 <p id="tip-select" class="input-title">Select Tip %</p>
-                <div id="btn-section">
-                    <button class="tip-btn" id="5-btn">5%</button>
-                    <button class="tip-btn" id="10-btn">10%</button>
-                    <button class="tip-btn" id="15-btn">15%</button>
-                    <button class="tip-btn" id="20-btn">20%</button>
-                    <button class="tip-btn" id="25-btn">25%</button>
-                    <input type="number" class="tip-btn" id="custom-btn" placeholder="CUSTOM">
+                <div id="btn-section"> 
+                    <button type="button" value="0.05" class="tip-btn click-tip" id="5-btn">5%</button>
+                    <button type="button" value="0.10" class="tip-btn click-tip" id="10-btn" data-value="10%">10%</button>
+                    <button type="button" value="0.15" class="tip-btn click-tip" id="15-btn" data-value="15%">15%</button>
+                    <button type="button" value="0.20" class="tip-btn click-tip" id="20-btn" data-value="20%">20%</button>
+                    <button type="button" value="0.25" class="tip-btn click-tip" id="25-btn" data-value="25%">25%</button>
+                    <input type="number" class="tip-btn payment-inputs" id="custom-btn" placeholder="CUSTOM" >
                 </div>
-                <p id="nr-people" class="input-title">Number of People</p>
-                <input type="text" id="people-input" class="people-input" placeholder="0">
+                <p id="nr-people" class="input-title ">Number of People <span id="people-error">Can't be zero</span></p>
+                <input type="number" id="people-input" class="people-input payment-info payment-inputs" placeholder="0" min="0">
                 <img src="images/icon-person.svg" alt="Dolar" id="person-sign" class="sign">
             </div>
             <div id="right-card">
-                <p>Tip amount <span id="tip-amount">$0.00</span> <br> <span class="person">/ person</span></p>
-                <p>Total <span id="tip-total">$0.00</span> <br> <span class="person">/ person</span></p>
-                <button id="reset-btn">RESET</button>
+                <div class="tips">
+                    <p class="resulted-tip">Tip amount  <br> <span class="person">/ person</span></p>
+                    <p class="tip-value" id="tip-person">$0.00</p>
+                </div>
+                <div class="tips">
+                    <p class="resulted-tip">Total <br> <span class="person">/ person</span></p>
+                    <p class="tip-value" id="total-person">$0.00</p>
+                </div>
+                <button type="reset" id="reset-btn">RESET</button>
             </div>
         </div>
     </div>
